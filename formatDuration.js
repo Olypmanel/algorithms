@@ -16,9 +16,6 @@ const formatDuration = (SS, setState) => {
        const length = d.length;
        return `${index === length - 1&&length > 1 ? "and ":''}${t[0]} ${t[0] > 1 ? t[1] +'s': t[1]}${index!==length - 1&& index!==length - 2 ?',':''}`;
    };
-  // setState(TIME.map(time => display(time, TIME)).join` `);
    return TIME.map(time => display(time, TIME)).join` `;
 };
-console.log(formatDuration(86402));
-const {seven,times,nine} = require('./arithFuncs.js');
-console.log(seven(times(nine())));
+console.log(formatDuration(864567755802));
